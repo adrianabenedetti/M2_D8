@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <!--
+        ESERCIZI HTML
+
+        1) Assegna un titolo per questa pagina -
+        2) Crea un tag h1 con il contenuto che preferisci - 
+        3) Crea una lista ordinata con alcuni elementi al suo interno - 
+        4) Crea una tabella con 4 righe e 5 colonne - 
+        5) Aggiungi un'immagine a ogni seconda cella di ogni riga - 
+        6) Aggiungi un tag <a> ad ogni immagine -
+        7) Unisci insieme 2 celle della tabella - 
+        8) Dividi la pagina inserendo una riga orizzontale - 
+        9) Crea un elemento contenitore con al suo interno un paragrafo e una lista non ordinata - 
+        10) Crea un footer contenente alcune informazioni sul creatore della pagina - 
+
+        ESERCIZI CSS
+
+        11) Assegna una larghezza massima al tag body e centralo nella pagina - 
+        12) Centra ogni tag h1 - 
+        13) Cambia il colore di ogni link nella pagina - 
+        14) Crea una classe e assegnale un bordo -
+        15) Fai in modo che la i bordi della tabella che hai creato siano arrotondati -
+        16) Aggiungi un margine ad ogni paragrafo - 
+        17) Crea una classe che una volta assegnata cambi la dimensione e il peso del font - 
+        18) Crea una classe per nascondere un elemento - 
+        19) Aggiungi un bordo verde a ogni <td> - 
+        20) Aggiungi un bordo puntato rosso a ogni <tr> (nota: <tr> non accetta una proprietà "border") - 
+
+        ESERCIZI JAVASCRIPT
+
+        21) Date le variabili x = "John" e y = "Doe", mostra in console "John <> Doe" - 
+        22) Crea un oggetto con le seguenti proprietà: name, surname, email - 
+        23) Cancella la proprietà email dall'oggetto appena creato - 
+        24) Crea un array contenente 10 stringhe - 
+        25) Mostra in console ogni stringa del precedente array - 
+        26) Crea un array contenente 100 numeri random - 
+        27) Scrivi una funzione per trovare il valore massimo e il valore minimo dall'array appena creato -
+        28) Crea un array di array, nel quale ogni array "figlio" ha 10 numeri random - 
+        29) Crea una funzione che riceve 2 array come parametri e ritorni quello con più elementi -
+        30) Crea una funzione che riceve 2 array numerici come parametri e ritorna quello con la somma totale degli elementi maggiore - 
+
+        ESERCIZI SUL DOM
+
+        31) Seleziona l'elemento con id "container" nella pagina - 
+        32) Seleziona tutti gli elementi di tipo <td> nella pagina - 
+        33) Usa un ciclo per stampare in console il testo contenuto in ogni elemento <td> nella pagina - 
+        34) Scrivi una funzione per cambiare il titolo della pagina - 
+        35) Scrivi una funzione per aggiungere una nuova riga alla tabella nella pagina - 
+        36) Scrivi una funzione per aggiungere la classe "test" ad ogni riga nella tabella - 
+        37) Scrivi una funzione per aggiungere uno sfondo rosso a ogni link presente nella pagina-
+        38) Mostra in console "Page loaded" quando la pagina ha finito di caricarsi-
+        39) Scrivi una funzione per aggiungere nuovi elementi alla lista non ordinata nella pagina -
+        40) Scrivi una funzione per svuotare una lista nella pagina - 
+
+        ESERCIZI EXTRA
+
+        41) Aggiungi un event listener in modo che compaia un alert quando il cursore passa sopra un link; l'alert deve mostrare la sua proprietà href - 
+        42) Crea un bottone che una volta cliccato nasconde ogni immagine nella pagina - 
+        43) Crea un bottone che una volta cliccato nasconde o mostra la tabella nella pagina -
+        44) Crea una funzione per calcolare la somma di ogni numero contenuto in tutte le celle della tabella (se il contenuto è un numero) - 
+        45) Cancella l'ultima lettera dal titolo della pagina ogni volta che l'utente ci clicca sopra -
+        46) Aggiungi un event listener in modo che cliccando un <td> nella pagina, questo cambi colore di sfondo - 
+        47) Aggiungi un bottone che una volta cliccato elimini un <td> a caso nella tabella - 
+        48) Aggiungi automaticamente un bordo rosa ad una cella della tabella quando il cursore ci passa sopra - 
+        49) Scrivi una funzione per creare una tabella con 4 righe e 3 colonne e aggiungerla alla fine della pagina - 
+        50) Scrivi una funzione per rimuovere l'ultima tabella presente nella pagina
+        
+    -->
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Esercizio D8</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+
+    </head>
+  <body cz-shortcut-listen="true">
+
+    <h1>Esercizio M2 D8</h1>
+
+    <h3>Dinosauri:</h3>
+    <ol>
+      <li>Triceratopo;</li>
+      <li>Brachiosauro;</li>
+      <li>Anchilosauro;</li>
+      <li>Apatosauro;</li>
+      <li>Spinosauro;</li>
+      <li>Stegosauro;</li>
+      <li>Sauropelta.</li>
+    </ol>
+
+    <table id="container">
+      <tr>
+        <td colspan="2">Immagine 1</td>
+        <td><a href="#"><img src="dinosauri-846x529.jpg" alt=""></a></td>
+        <td><a class = "link" href="https://it.wikipedia.org/wiki/Estinzione_di_massa_del_Cretaceo-Paleocene">Evento K-T</a></td>
+        <td>"1"</td>
+        <td>"2"</td>
+      </tr>
+      <tr>
+        <td colspan="2">Immagine 2</td>
+        <td><a href="#"><img src="dinosauro_australia_fg.jpg" alt=""></a></td>
+        <td><a class = "link" href="https://it.wikipedia.org/wiki/Brachiosaurus_altithorax">Brachiosauro</a></td>
+        <td>"3"</td>
+        <td>"4"</td>
+      </tr>
+      <tr>
+        <td colspan="2">Immagine 3</td>
+        <td><a href="#"><img src="triceratopshorridus_hexdcb_3x4.jpeg" alt=""></a></td>
+        <td><a class = "link" href="https://it.wikipedia.org/wiki/Triceratops">Triceratopo</a></td>
+        <td>"5"</td>
+        <td>"6"</td>
+      </tr>
+      <tr>
+        <td colspan="2">Immagine 4</td>
+        <td><a href="#"><img src="DSC_1269_mod_small.jpg" alt=""></a></td>
+        <td><a class = "link" href="https://it.wikipedia.org/wiki/Titanosauria">Diplodoco</a></td>
+        <td>"7"</td>
+        <td>"8"</td>
+      </tr>
+    </table>
+    <hr>
+    <div class="bordi">
+      <p>Fun fact: I dinosauri non si sono del tutto estinti. Infatti, si dividono in:</p>
+      <ul id="unorderedList">
+        <li>Dinosauri aviani</li>
+        <li>Dinosauri non aviani</li>
+      </ul>
+      <p>E solo quelli non aviani si sono estinti. I dinosauri aviani sono i nostri attuali uccelli. 🐦</p>
+    </div>
+    <footer>
+      <p>Powered by Adriana since Jurassic.©</p>
+    </footer>
+    <script src='main.js'></script>
+  </body>
+</html>
